@@ -57,7 +57,7 @@ a {
 .line-clamp.line-2 {
   --line-clamp: 2;
 }
-.break-all{
+.break-all {
   word-break: break-all;
 }
 /* ============header=============== */
@@ -355,4 +355,61 @@ a {
 }
 .popular .course-item .btn-book:hover {
   background: var(--primary-color);
+}
+/* =========================feedback========================== */
+
+.feedback {
+  margin-top: 135px;
+  background: #2e2100;
+  padding: 96px 0;
+}
+.feedback .feedback-item {
+  display: flex;
+}
+.feedback .info .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.feedback .info .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+.feedback .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+.feedback-item .info .dots {
+  margin-top: 28px;
+  display: flex;
+  gap: 6px;
+}
+.feedback-item .info .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+.feedback-item .info .dot.active{
+  background-color: var(--primary-color);
+  cursor: default;
+}
+.feedback-item .content {
+  width: 66%;
+  margin-left: auto;
+  color: #fff;
+}
+.feedback-item blockquote {
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54;
+  color: #FFF;
 }
