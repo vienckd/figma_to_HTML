@@ -495,12 +495,14 @@ a {
   line-height: 1.75;
 }
 .blogs .blog-list {
+  overflow: hidden;
   display: flex;
   margin-top: 55px;
   gap: 30px;
 }
 .blogs .item {
-  width: 33.3333%;
+  flex-shrink: 0;
+  width: calc((100% - 60px) / 3);
   border-radius: 16px;
   background: #fff;
 }
@@ -559,4 +561,22 @@ a {
 }
 .blogs .item .btn:hover {
   background-color: var(--primary-color);
+}
+.blogs .dots{
+  margin-top: 38px;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+.blogs .dots .dot {
+  /* display: inline-block; */
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #5f5b53;
+  cursor: pointer;
+}
+.blogs .dot.active{
+  background-color: var(--primary-color);
+  cursor: none;
 }
